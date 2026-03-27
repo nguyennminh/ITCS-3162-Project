@@ -6,6 +6,7 @@ Group 29 | Course: Introduction to Data Mining
 This log tracks the primary responsibilities and contributions of each team member throughout the project lifecycle.
 
 | Member Name | Key Responsibilites | Deliverables/Nodes Owned | Percentage Effort |
+| --- | --- | --- | --- |
 | Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot  | 50% |
 | Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix | 50% |
 
