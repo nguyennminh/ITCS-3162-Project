@@ -1,9 +1,31 @@
-# ITCS-3162-Project
-Final Cummalative Project for ITCS 3162 at UNC Charlotte
+# Final Cummalative Project for ITCS 3162 at UNC Charlotte - Contribution Log
+Project Title: Wellness Grocery Inventory Analysis
+Group 29 | Course: Introduction to Data Mining
 
-# Topic
-Wellness Grocery Inventory Analysis
+## 1. Contribution Log
+This log tracks the primary responsibilities and contributions of each team member throughout the project lifecycle.
 
-Six week team project in which we will work as data scientists for a wellness-focused grocery store. Our mission is to analyze the nutritional composition of the store’s inventory to find patterns in the items they sell. This analysis will help the business assess if their current offerings align with their "Wellness and Health" ethos.
+| Member Name | Key Responsibilites | Deliverables/Nodes Owned | Percentage Effort |
+| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot  | 50% |
+| Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix | 50% |
 
-The project follows a comprehensive unsupervised learning pipeline, including data normalization, dimensionality reduction (PCA), clustering (k-Means), and cluster profiling. Strong collaboration and documentation established in the beginning are critical for translating technical clusters into actionable business insights.
+## 2. Version Control & Infrastructure
+Primary Communication Platform: Discord
+
+Weekly Sync Time: Monday 8 AM - 9 AM
+
+GitHub Repository Link: https://github.com/nguyennminh/ITCS-3162-Project
+
+3. Workflow Documentation
+KNIME Workflow Overview: A brief description of the final pipeline.
+
+Key Annotations: [Students: List the top 3 most important Metanodes or Annotations that explain your model's logic here]
+
+Known Limitations: [Students: List any issues or edge cases the model does not handle well]
+
+4. Group Agreement & Attestation
+By signing below, all team members confirm that the work contained within this repository is the result of a collaborative effort and that all individual contributions are fairly represented in the log above.
+
+Member 1 : Minh Nguyen Date: March 27, 2026
+
+Member 2 : Krish Iyer Date: March 27, 2026
