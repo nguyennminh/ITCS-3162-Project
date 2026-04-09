@@ -7,8 +7,8 @@ This log tracks the primary responsibilities and contributions of each team memb
 
 | Member Name | Key Responsibilites | Deliverables/Nodes Owned | Percentage Effort |
 | --- | --- | --- | --- |
-| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot  | 50% |
-| Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix | 50% |
+| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot, PCA, Scatter Plot (PCA) | 50% |
+| Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix, k-Means, UWW Kmeans Clustering, Line Plot, Color Manager, Scatter Plot (Javascript) (legacy) | 50% |
 
 ## 2. Version Control & Infrastructure
 Primary Communication Platform: Discord
@@ -20,7 +20,10 @@ GitHub Repository Link: https://github.com/nguyennminh/ITCS-3162-Project
 ## 3. Workflow Documentation
 KNIME Workflow Overview: A brief description of the final pipeline.
 
-Key Annotations: [Students: List the top 3 most important Metanodes or Annotations that explain your model's logic here]
+Key Annotations: 
+  - Chosen 3 Features, KiloCalories, Water, Fat Total Lipids based off of correlation matrix using the Scatter Plot Matrix node.
+  - After aplying PCA and identifying the dimensions using a Scatter Plot node we concluded that it has high variance overall. The data spreads much more along the horizontal axis than the vertical axis showing that the first PCA dimension captures most of the variance. A few outlier points far from main cluster also add extra spread to overall data.
+  - Based off of the visualization from Line Plot node with the elbow method from using the UWW KMeans Clustering node to get the WCSS for each k, we can see that when k = 6 threshold point in which after that point the WCSS is not significantly changing anymore making it the elbow point. This shows that k = 6 is the most optimal k.
 
 Known Limitations: [Students: List any issues or edge cases the model does not handle well]
 
