@@ -7,7 +7,7 @@ This log tracks the primary responsibilities and contributions of each team memb
 
 | Member Name | Key Responsibilites | Deliverables/Nodes Owned | Percentage Effort |
 | --- | --- | --- | --- |
-| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot, PCA, Scatter Plot (PCA) | 50% |
+| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot, PCA, Scatter Plot (PCA), GroupBy, Sorter, Joiner, Scorer, Silhouette Coefficient, Bar Chart | 50% |
 | Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix, k-Means, UWW Kmeans Clustering, Line Plot, Color Manager, Scatter Plot (Javascript) (legacy) | 50% |
 
 ## 2. Version Control & Infrastructure
@@ -24,6 +24,8 @@ Key Annotations:
   - Chosen 3 Features, KiloCalories, Water, Fat Total Lipids based off of correlation matrix using the Scatter Plot Matrix node.
   - After aplying PCA and identifying the dimensions using a Scatter Plot node we concluded that it has high variance overall. The data spreads much more along the horizontal axis than the vertical axis showing that the first PCA dimension captures most of the variance. A few outlier points far from main cluster also add extra spread to overall data.
   - Based off of the visualization from Line Plot node with the elbow method from using the UWW KMeans Clustering node to get the WCSS for each k, we can see that when k = 6 threshold point in which after that point the WCSS is not significantly changing anymore making it the elbow point. This shows that k = 6 is the most optimal k.
+  - The confusion matrix shows that most items are correctly grouped within their dominant category, as indicated by higher values along the diagonal. However, some categories are misclassified, particularly those with similar nutritional properties such as moderate fat and water content. This suggests that the selected features lead to partial overlap between certain food groups.
+  - The silhouette scores indicate that most clusters are well-defined, with all clusters having positive values. Cluster 1 shows the highest score, suggesting strong separation and clear grouping based on the selected features. Clusters 2, 4, and 5 also demonstrate good structure, while Cluster 3 has the lowest silhouette score, indicating some overlap with other clusters. This suggests that while the features Kilocalories, Fat, and Water are effective for distinguishing certain food groups, some categories share similar nutritional profiles, leading to less distinct clustering.
 
 Known Limitations: [Students: List any issues or edge cases the model does not handle well]
 
