@@ -7,8 +7,8 @@ This log tracks the primary responsibilities and contributions of each team memb
 
 | Member Name | Key Responsibilites | Deliverables/Nodes Owned | Percentage Effort |
 | --- | --- | --- | --- |
-| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot, PCA, Scatter Plot (PCA), GroupBy, Sorter, Joiner, Scorer, Silhouette Coefficient, Bar Chart | 50% |
-| Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix, k-Means, UWW Kmeans Clustering, Line Plot, Color Manager, Scatter Plot (Javascript) (legacy) | 50% |
+| Minh Nguyen | Team Lead and Visualization | Histogram, Box Plot, PCA, Scatter Plot (PCA), GroupBy, Sorter, Joiner, Scorer, Silhouette Coefficient, Bar Chart, Report | 50% |
+| Krish Iyer | Fairness and Model Architect  | Scatter Plot Matrix, k-Means, UWW Kmeans Clustering, Line Plot, Color Manager, Scatter Plot (Javascript) (legacy), Presentation Slides | 50% |
 
 ## 2. Version Control & Infrastructure
 Primary Communication Platform: Discord
@@ -27,7 +27,12 @@ Key Annotations:
   - The confusion matrix shows that most items are correctly grouped within their dominant category, as indicated by higher values along the diagonal. However, some categories are misclassified, particularly those with similar nutritional properties such as moderate fat and water content. This suggests that the selected features lead to partial overlap between certain food groups.
   - The silhouette scores indicate that most clusters are well-defined, with all clusters having positive values. Cluster 1 shows the highest score, suggesting strong separation and clear grouping based on the selected features. Clusters 2, 4, and 5 also demonstrate good structure, while Cluster 3 has the lowest silhouette score, indicating some overlap with other clusters. This suggests that while the features Kilocalories, Fat, and Water are effective for distinguishing certain food groups, some categories share similar nutritional profiles, leading to less distinct clustering.
 
-Known Limitations: [Students: List any issues or edge cases the model does not handle well]
+Known Limitations: 
+  - One limitation is that I only used three features: Kilocalories, Fat, and Water. This means the clusters are based on a small part of the food’s nutrition, so some foods that      are actually different may look similar.
+  - Another issue is that some foods have very close values for these features, which can cause clusters to overlap and lower silhouette scores.
+  - The results also depend on the number of clusters chosen. If k is too high or too low, the groups may not make sense.
+  - An edge case is foods that have balanced values (not high or low in anything). These items may not clearly belong to one cluster and can be harder to group correctly.
+  - Finally, clustering does not use the true category labels, so even if the clusters look good, they may not match the actual food groups perfectly.
 
 ## 4. Group Agreement & Attestation
 By signing below, all team members confirm that the work contained within this repository is the result of a collaborative effort and that all individual contributions are fairly represented in the log above.
